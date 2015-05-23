@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "Underloud",
+            "location": "North Central US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "Underloud_db",
+                "serverName": "db1utufe9z",
+                "user": "matt",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "North Central US"
+            }
+        ]
+    }
+}
