@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Entities\PlayerRank.cs" />
     <Compile Include="Entities\Fit\Crc.cs" />
     <Compile Include="Entities\Fit\Decode.cs" />
     <Compile Include="Entities\Fit\Defines.cs" />
@@ -161,6 +163,9 @@
     <Compile Include="Entities\Fit\Profile\Types\WorkoutHr.cs" />
     <Compile Include="Entities\Fit\Profile\Types\WorkoutPower.cs" />
     <Compile Include="Entities\Fit\Subfield.cs" />
+    <Compile Include="Entities\Game.cs" />
+    <Compile Include="Entities\GameType.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
