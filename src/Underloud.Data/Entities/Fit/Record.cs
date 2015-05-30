@@ -976,79 +976,31 @@ namespace Underloud.Data.Entities.Fit
       ///<summary>      
       /// Retrieves the EnhancedSpeed field
       /// Units: m/s</summary>
-      /// <returns>Returns nullable float representing the EnhancedSpeed field</returns>      
-      public float? GetEnhancedSpeed()   
-      {                
-         return (float?)GetFieldValue(73, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set EnhancedSpeed field
-      /// Units: m/s</summary>
-      /// <param name="enhancedSpeed_">Nullable field value to be set</param>      
-      public void SetEnhancedSpeed(float? enhancedSpeed_) 
-      {  
-         SetFieldValue(73, 0, enhancedSpeed_, Fit.SubfieldIndexMainField);
-      }
-          
+      /// <returns>Returns nullable float representing the EnhancedSpeed field</returns> 
+      /// <param name="enhancedSpeed_">Nullable field value to be set</param>
+      public float? EnhancedSpeed { get; set; }
+  
       ///<summary>      
       /// Retrieves the EnhancedAltitude field
       /// Units: m</summary>
-      /// <returns>Returns nullable float representing the EnhancedAltitude field</returns>      
-      public float? GetEnhancedAltitude()   
-      {                
-         return (float?)GetFieldValue(78, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set EnhancedAltitude field
-      /// Units: m</summary>
-      /// <param name="enhancedAltitude_">Nullable field value to be set</param>      
-      public void SetEnhancedAltitude(float? enhancedAltitude_) 
-      {  
-         SetFieldValue(78, 0, enhancedAltitude_, Fit.SubfieldIndexMainField);
-      }
-          
+      /// <returns>Returns nullable float representing the EnhancedAltitude field</returns> 
+      /// <param name="enhancedAltitude_">Nullable field value to be set</param>
+      public float? EnhancedAltitude { get; set; }
+  
       ///<summary>      
       /// Retrieves the BatterySoc field
       /// Units: percent
       /// Comment: lev battery state of charge</summary>
-      /// <returns>Returns nullable float representing the BatterySoc field</returns>      
-      public float? GetBatterySoc()   
-      {                
-         return (float?)GetFieldValue(81, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set BatterySoc field
-      /// Units: percent
-      /// Comment: lev battery state of charge</summary>
-      /// <param name="batterySoc_">Nullable field value to be set</param>      
-      public void SetBatterySoc(float? batterySoc_) 
-      {  
-         SetFieldValue(81, 0, batterySoc_, Fit.SubfieldIndexMainField);
-      }
+      /// <returns>Returns nullable float representing the BatterySoc field</returns>  
+      /// <param name="batterySoc_">Nullable field value to be set</param>
+      public float? BatterySoc { get; set; }
           
       ///<summary>      
       /// Retrieves the MotorPower field
       /// Units: watts
       /// Comment: lev motor power</summary>
-      /// <returns>Returns nullable ushort representing the MotorPower field</returns>      
-      public ushort? GetMotorPower()   
-      {                
-         return (ushort?)GetFieldValue(82, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set MotorPower field
-      /// Units: watts
-      /// Comment: lev motor power</summary>
-      /// <param name="motorPower_">Nullable field value to be set</param>      
-      public void SetMotorPower(ushort? motorPower_) 
-      {  
-         SetFieldValue(82, 0, motorPower_, Fit.SubfieldIndexMainField);
-      }
-                        
-     
+      /// <returns>Returns nullable ushort representing the MotorPower field</returns>
+      /// <param name="motorPower_">Nullable field value to be set</param>  
+      public ushort? MotorPower { get; set; }    
    } 
 } 
