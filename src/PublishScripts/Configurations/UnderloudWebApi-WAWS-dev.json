@@ -1,13 +1,13 @@
 {
     "environmentSettings": {
         "webSite": {
-            "name": "Underloud",
+            "name": "underloud",
             "location": "North Central US"
         },
         "databases": [
             {
                 "connectionStringName": "DefaultConnection",
-                "databaseName": "Underloud_db",
+                "databaseName": "underloud_db",
                 "serverName": "db1utufe9z",
                 "user": "matt",
                 "password": "",

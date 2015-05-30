@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\lib\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\lib\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,136 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Player.cs" />
-    <Compile Include="Entities\PlayerRank.cs" />
-    <Compile Include="Entities\Fit\Crc.cs" />
-    <Compile Include="Entities\Fit\Decode.cs" />
-    <Compile Include="Entities\Fit\Defines.cs" />
-    <Compile Include="Entities\Fit\Encode.cs" />
-    <Compile Include="Entities\Fit\Field.cs" />
-    <Compile Include="Entities\Fit\FieldComponent.cs" />
-    <Compile Include="Entities\Fit\FieldDefinition.cs" />
-    <Compile Include="Entities\Fit\FitException.cs" />
-    <Compile Include="Entities\Fit\Header.cs" />
-    <Compile Include="Entities\Fit\Mesg.cs" />
-    <Compile Include="Entities\Fit\MesgBroadcaster.cs" />
-    <Compile Include="Entities\Fit\MesgDefinition.cs" />
-    <Compile Include="Entities\Fit\Profile.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\ActivityMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\BikeProfileMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\BloodPressureMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\CadenceZoneMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\CapabilitiesMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\CourseMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\CoursePointMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\DeviceInfoMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\DeviceSettingsMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\EventMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\FieldCapabilitiesMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\FileCapabilitiesMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\FileCreatorMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\FileIdMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\GoalMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\HrmProfileMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\HrvMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\HrZoneMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\LapMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\LengthMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\MemoGlobMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\MesgCapabilitiesMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\MetZoneMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\MonitoringInfoMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\MonitoringMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\PadMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\PowerZoneMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\RecordMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\ScheduleMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\SdmProfileMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\SessionMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\SlaveDeviceMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\SoftwareMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\SpeedZoneMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\SportMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\TotalsMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\TrainingFileMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\UserProfileMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\WeightScaleMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\WorkoutMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\WorkoutStepMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Mesgs\ZonesTargetMesg.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Activity.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\ActivityClass.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\ActivityLevel.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\ActivitySubtype.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\ActivityType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\AntNetwork.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\AntplusDeviceType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\AutolapTrigger.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\BatteryStatus.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\BodyLocation.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Bool.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\BpStatus.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Checksum.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\ConnectivityCapabilities.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\CourseCapabilities.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\CoursePoint.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\DateTime.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\DeviceIndex.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\DisplayHeart.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\DisplayMeasure.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\DisplayPosition.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\DisplayPower.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Event.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\EventType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\File.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\FileFlags.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\FitnessEquipmentState.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\GarminProduct.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Gender.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Goal.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\GoalRecurrence.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\HrType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\HrZoneCalc.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Intensity.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Language.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\LapTrigger.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\LeftRightBalance.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\LeftRightBalance100.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\LengthType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\LocalDateTime.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Manufacturer.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\MesgCount.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\MesgNum.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\MessageIndex.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\PowerPhaseType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\PwrZoneCalc.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\RiderPositionType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Schedule.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\SessionTrigger.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\SourceType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Sport.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\SportBits0.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\SportBits1.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\SportBits2.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\StrokeType.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\SubSport.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\SwimStroke.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\TimerTrigger.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\TimeZone.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\UserLocalId.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\Weight.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\WktStepDuration.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\WktStepTarget.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\WorkoutCapabilities.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\WorkoutHr.cs" />
-    <Compile Include="Entities\Fit\Profile\Types\WorkoutPower.cs" />
-    <Compile Include="Entities\Fit\Subfield.cs" />
-    <Compile Include="Entities\Game.cs" />
-    <Compile Include="Entities\GameType.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Athlete.cs" />
+    <Compile Include="Entities\AthleteRank.cs" />
+    <Compile Include="Entities\Course.cs" />
+    <Compile Include="Entities\Fit\Record.cs" />
+    <Compile Include="Entities\SportType.cs" />
+    <Compile Include="Entities\AthleteInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
