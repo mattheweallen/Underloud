@@ -57,57 +57,24 @@ namespace Underloud.Data.Entities.Fit
       /// Retrieves the Distance field
       /// Units: m</summary>
       /// <returns>Returns nullable float representing the Distance field</returns>      
-      public float? GetDistance()   
-      {                
-         return (float?)GetFieldValue(5, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set Distance field
-      /// Units: m</summary>
-      /// <param name="distance_">Nullable field value to be set</param>      
-      public void SetDistance(float? distance_) 
-      {  
-         SetFieldValue(5, 0, distance_, Fit.SubfieldIndexMainField);
-      }
+      /// <param name="distance_">Nullable field value to be set</param>
+      public float? Distance { get; set; }
+       
           
       ///<summary>      
       /// Retrieves the Speed field
       /// Units: m/s</summary>
-      /// <returns>Returns nullable float representing the Speed field</returns>      
-      public float? GetSpeed()   
-      {                
-         return (float?)GetFieldValue(6, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set Speed field
-      /// Units: m/s</summary>
-      /// <param name="speed_">Nullable field value to be set</param>      
-      public void SetSpeed(float? speed_) 
-      {  
-         SetFieldValue(6, 0, speed_, Fit.SubfieldIndexMainField);
-      }
+      /// <returns>Returns nullable float representing the Speed field</returns>
+      /// <param name="speed_">Nullable field value to be set</param>
+      public float? Speed { get; set; }
           
       ///<summary>      
       /// Retrieves the Power field
       /// Units: watts</summary>
-      /// <returns>Returns nullable ushort representing the Power field</returns>      
-      public ushort? GetPower()   
-      {                
-         return (ushort?)GetFieldValue(7, 0, Fit.SubfieldIndexMainField);                     
-      }
+      /// <returns>Returns nullable ushort representing the Power field</returns>  
+      /// <param name="power_">Nullable field value to be set</param>
+      public ushort? Power { get; set; }
 
-      /// <summary>        
-      /// Set Power field
-      /// Units: watts</summary>
-      /// <param name="power_">Nullable field value to be set</param>      
-      public void SetPower(ushort? power_) 
-      {  
-         SetFieldValue(7, 0, power_, Fit.SubfieldIndexMainField);
-      }
-          
-      
       /// <summary>
       /// 
       /// </summary>  
@@ -139,38 +106,16 @@ namespace Underloud.Data.Entities.Fit
       /// Retrieves the Grade field
       /// Units: %</summary>
       /// <returns>Returns nullable float representing the Grade field</returns>      
-      public float? GetGrade()   
-      {                
-         return (float?)GetFieldValue(9, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set Grade field
-      /// Units: %</summary>
-      /// <param name="grade_">Nullable field value to be set</param>      
-      public void SetGrade(float? grade_) 
-      {  
-         SetFieldValue(9, 0, grade_, Fit.SubfieldIndexMainField);
-      }
+      /// <param name="grade_">Nullable field value to be set</param>
+      public float? Grade { get; set; }
           
       ///<summary>      
       /// Retrieves the Resistance field
       /// Comment: Relative. 0 is none  254 is Max.</summary>
       /// <returns>Returns nullable byte representing the Resistance field</returns>      
-      public byte? GetResistance()   
-      {                
-         return (byte?)GetFieldValue(10, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set Resistance field
-      /// Comment: Relative. 0 is none  254 is Max.</summary>
-      /// <param name="resistance_">Nullable field value to be set</param>      
-      public void SetResistance(byte? resistance_) 
-      {  
-         SetFieldValue(10, 0, resistance_, Fit.SubfieldIndexMainField);
-      }
-          
+      /// <param name="resistance_">Nullable field value to be set</param>    
+        public byte? Resistance { get; set; }
+  
       ///<summary>      
       /// Retrieves the TimeFromCourse field
       /// Units: s</summary>
