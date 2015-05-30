@@ -9,7 +9,7 @@ namespace Underloud.Data.Entities.Fit
     public class Record
     {   
         ///<summary>      
-        /// Gets and Sets the Timestamp field
+        /// Retrieves and Sets the Timestamp field
         /// Units: s</summary>
         /// <returns>Returns DateTime representing the Timestamp field</returns>     
         /// <param name="timestamp_">Nullable field value to be set</param>
@@ -18,7 +18,7 @@ namespace Underloud.Data.Entities.Fit
       
           
         ///<summary>      
-        /// Gets and Sets the PositionLat field
+        /// Retrieves and Sets the PositionLat field
         /// Units: semicircles</summary>
         /// <returns>Returns nullable int representing the PositionLat field</returns>  
         /// <param name="positionLat_">Nullable field value to be set</param>   
@@ -26,76 +26,32 @@ namespace Underloud.Data.Entities.Fit
       
           
       ///<summary>      
-      /// Retrieves the PositionLong field
+      /// Retrieves and Sets the PositionLong field
       /// Units: semicircles</summary>
       /// <returns>Returns nullable int representing the PositionLong field</returns>      
-      public int? GetPositionLong()   
-      {                
-         return (int?)GetFieldValue(1, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set PositionLong field
-      /// Units: semicircles</summary>
       /// <param name="positionLong_">Nullable field value to be set</param>      
-      public void SetPositionLong(int? positionLong_) 
-      {  
-         SetFieldValue(1, 0, positionLong_, Fit.SubfieldIndexMainField);
-      }
+      public int? PositionLong { get; set; }
           
       ///<summary>      
-      /// Retrieves the Altitude field
+      /// Retrieves and Sets the Altitude field
       /// Units: m</summary>
-      /// <returns>Returns nullable float representing the Altitude field</returns>      
-      public float? GetAltitude()   
-      {                
-         return (float?)GetFieldValue(2, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set Altitude field
-      /// Units: m</summary>
-      /// <param name="altitude_">Nullable field value to be set</param>      
-      public void SetAltitude(float? altitude_) 
-      {  
-         SetFieldValue(2, 0, altitude_, Fit.SubfieldIndexMainField);
-      }
+      /// <returns>Returns nullable float representing the Altitude field</returns>  
+      /// <param name="altitude_">Nullable field value to be set</param>
+      public float? Altitude { get; set; }
           
       ///<summary>      
       /// Retrieves the HeartRate field
       /// Units: bpm</summary>
-      /// <returns>Returns nullable byte representing the HeartRate field</returns>      
-      public byte? GetHeartRate()   
-      {                
-         return (byte?)GetFieldValue(3, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set HeartRate field
-      /// Units: bpm</summary>
-      /// <param name="heartRate_">Nullable field value to be set</param>      
-      public void SetHeartRate(byte? heartRate_) 
-      {  
-         SetFieldValue(3, 0, heartRate_, Fit.SubfieldIndexMainField);
-      }
+      /// <returns>Returns nullable byte representing the HeartRate field</returns>
+      /// <param name="heartRate_">Nullable field value to be set</param>
+      public byte? HeartRate { get; set; }   
           
       ///<summary>      
       /// Retrieves the Cadence field
       /// Units: rpm</summary>
       /// <returns>Returns nullable byte representing the Cadence field</returns>      
-      public byte? GetCadence()   
-      {                
-         return (byte?)GetFieldValue(4, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set Cadence field
-      /// Units: rpm</summary>
-      /// <param name="cadence_">Nullable field value to be set</param>      
-      public void SetCadence(byte? cadence_) 
-      {  
-         SetFieldValue(4, 0, cadence_, Fit.SubfieldIndexMainField);
-      }
+      /// <param name="cadence_">Nullable field value to be set</param>
+      public byte? Cadence { get; set; }
           
       ///<summary>      
       /// Retrieves the Distance field
