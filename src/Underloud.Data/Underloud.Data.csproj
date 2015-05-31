@@ -49,9 +49,10 @@
     <Compile Include="Entities\Athlete.cs" />
     <Compile Include="Entities\AthleteRank.cs" />
     <Compile Include="Entities\Course.cs" />
-    <Compile Include="Entities\Fit\Record.cs" />
+    <Compile Include="Entities\Fit\Profile\Mesgs\Record.cs" />
     <Compile Include="Entities\SportType.cs" />
     <Compile Include="Entities\AthleteInfo.cs" />
+    <Compile Include="Entities\Unit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
