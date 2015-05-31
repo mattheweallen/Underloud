@@ -75,32 +75,12 @@ namespace Underloud.Data.Entities.Fit
       /// <param name="power_">Nullable field value to be set</param>
       public ushort? Power { get; set; }
 
-      /// <summary>
-      /// 
-      /// </summary>  
-      /// <returns>returns number of elements in field CompressedSpeedDistance</returns>      
-      public int GetNumCompressedSpeedDistance() 
-      {
-         return GetNumFieldValues(8, Fit.SubfieldIndexMainField);
-      }
-
       ///<summary>      
       /// Retrieves the CompressedSpeedDistance field</summary>
       /// <param name="index">0 based index of CompressedSpeedDistance element to retrieve</param>
-      /// <returns>Returns nullable byte representing the CompressedSpeedDistance field</returns>      
-      public byte? GetCompressedSpeedDistance(int index)   
-      {                
-         return (byte?)GetFieldValue(8, index, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set CompressedSpeedDistance field</summary>      
-      /// <param name="index">0 based index of compressed_speed_distance</param>
-      /// <param name="compressedSpeedDistance_">Nullable field value to be set</param>      
-      public void SetCompressedSpeedDistance(int index, byte? compressedSpeedDistance_) 
-      {  
-         SetFieldValue(8, index, compressedSpeedDistance_, Fit.SubfieldIndexMainField);
-      }
+      /// <returns>Returns nullable byte representing the CompressedSpeedDistance field</returns> 
+      /// <param name="compressedSpeedDistance_">Nullable field value to be set</param>
+      public byte? CompressedSpeedDistance { get; set; }
           
       ///<summary>      
       /// Retrieves the Grade field
@@ -137,43 +117,20 @@ namespace Underloud.Data.Entities.Fit
       /// <param name="temperature_">Nullable field value to be set</param>
       public sbyte? Temperature { get; set; }
 
-          
-      
-      /// <summary>
-      /// 
-      /// </summary>  
-      /// <returns>returns number of elements in field Speed1s</returns>      
-      public int GetNumSpeed1s() 
-      {
-         return GetNumFieldValues(17, Fit.SubfieldIndexMainField);
-      }
-
       ///<summary>      
       /// Retrieves the Speed1s field
       /// Units: m/s
       /// Comment: Speed at 1s intervals.  Timestamp field indicates time of last array element.</summary>
       /// <param name="index">0 based index of Speed1s element to retrieve</param>
-      /// <returns>Returns nullable float representing the Speed1s field</returns>      
-      public float? GetSpeed1s(int index)   
-      {                
-         return (float?)GetFieldValue(17, index, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set Speed1s field
-      /// Units: m/s
-      /// Comment: Speed at 1s intervals.  Timestamp field indicates time of last array element.</summary>      
-      /// <param name="index">0 based index of speed_1s</param>
-      /// <param name="speed1s_">Nullable field value to be set</param>      
-      public void SetSpeed1s(int index, float? speed1s_) 
-      {  
-         SetFieldValue(17, index, speed1s_, Fit.SubfieldIndexMainField);
-      }
-          
+      /// <returns>Returns nullable float representing the Speed1s field</returns>  
+      /// <param name="speed1s_">Nullable field value to be set</param>
+      public float? Speed1s { get; set; }
+  
       ///<summary>      
       /// Retrieves the Cycles field
       /// Units: cycles</summary>
-      /// <returns>Returns nullable byte representing the Cycles field</returns>      
+      /// <returns>Returns nullable byte representing the Cycles field</returns>   
+      /// <param name="cycles_">Nullable field value to be set</param> 
       public byte? GetCycles()   
       {                
          return (byte?)GetFieldValue(18, 0, Fit.SubfieldIndexMainField);                     
@@ -182,7 +139,7 @@ namespace Underloud.Data.Entities.Fit
       /// <summary>        
       /// Set Cycles field
       /// Units: cycles</summary>
-      /// <param name="cycles_">Nullable field value to be set</param>      
+      ///      
       public void SetCycles(byte? cycles_) 
       {  
          SetFieldValue(18, 0, cycles_, Fit.SubfieldIndexMainField);
