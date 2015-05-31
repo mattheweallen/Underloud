@@ -114,61 +114,29 @@ namespace Underloud.Data.Entities.Fit
       /// Comment: Relative. 0 is none  254 is Max.</summary>
       /// <returns>Returns nullable byte representing the Resistance field</returns>      
       /// <param name="resistance_">Nullable field value to be set</param>    
-        public byte? Resistance { get; set; }
+      public byte? Resistance { get; set; }
   
       ///<summary>      
       /// Retrieves the TimeFromCourse field
       /// Units: s</summary>
-      /// <returns>Returns nullable float representing the TimeFromCourse field</returns>      
-      public float? GetTimeFromCourse()   
-      {                
-         return (float?)GetFieldValue(11, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set TimeFromCourse field
-      /// Units: s</summary>
-      /// <param name="timeFromCourse_">Nullable field value to be set</param>      
-      public void SetTimeFromCourse(float? timeFromCourse_) 
-      {  
-         SetFieldValue(11, 0, timeFromCourse_, Fit.SubfieldIndexMainField);
-      }
+      /// <returns>Returns nullable float representing the TimeFromCourse field</returns>  
+      /// <param name="timeFromCourse_">Nullable field value to be set</param>
+      public float? TimeFromCourse { get; set; }
           
       ///<summary>      
       /// Retrieves the CycleLength field
       /// Units: m</summary>
-      /// <returns>Returns nullable float representing the CycleLength field</returns>      
-      public float? GetCycleLength()   
-      {                
-         return (float?)GetFieldValue(12, 0, Fit.SubfieldIndexMainField);                     
-      }
-
-      /// <summary>        
-      /// Set CycleLength field
-      /// Units: m</summary>
-      /// <param name="cycleLength_">Nullable field value to be set</param>      
-      public void SetCycleLength(float? cycleLength_) 
-      {  
-         SetFieldValue(12, 0, cycleLength_, Fit.SubfieldIndexMainField);
-      }
+      /// <returns>Returns nullable float representing the CycleLength field</returns> 
+      /// <param name="cycleLength_">Nullable field value to be set</param>
+      public float? CycleLength { get; set; }
           
       ///<summary>      
       /// Retrieves the Temperature field
       /// Units: C</summary>
-      /// <returns>Returns nullable sbyte representing the Temperature field</returns>      
-      public sbyte? GetTemperature()   
-      {                
-         return (sbyte?)GetFieldValue(13, 0, Fit.SubfieldIndexMainField);                     
-      }
+      /// <returns>Returns nullable sbyte representing the Temperature field</returns>  
+      /// <param name="temperature_">Nullable field value to be set</param>
+      public sbyte? Temperature { get; set; }
 
-      /// <summary>        
-      /// Set Temperature field
-      /// Units: C</summary>
-      /// <param name="temperature_">Nullable field value to be set</param>      
-      public void SetTemperature(sbyte? temperature_) 
-      {  
-         SetFieldValue(13, 0, temperature_, Fit.SubfieldIndexMainField);
-      }
           
       
       /// <summary>
