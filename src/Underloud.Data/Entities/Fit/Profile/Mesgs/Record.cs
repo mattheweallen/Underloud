@@ -15,8 +15,6 @@ namespace Underloud.Data.Entities.Fit
         /// <param name="timestamp_">Nullable field value to be set</param>
         public DateTime Timestamp { get; set; }
 
-      
-          
         ///<summary>      
         /// Retrieves and Sets the PositionLat field
         /// Units: semicircles</summary>
@@ -25,107 +23,152 @@ namespace Underloud.Data.Entities.Fit
         public int? PositionLat { get; set; }   
       
           
-      ///<summary>      
-      /// Retrieves and Sets the PositionLong field
-      /// Units: semicircles</summary>
-      /// <returns>Returns nullable int representing the PositionLong field</returns>      
-      /// <param name="positionLong_">Nullable field value to be set</param>      
-      public int? PositionLong { get; set; }
+        ///<summary>      
+        /// Retrieves and Sets the PositionLong field
+        /// Units: semicircles</summary>
+        /// <returns>Returns nullable int representing the PositionLong field</returns>      
+        /// <param name="positionLong_">Nullable field value to be set</param>      
+        public int? PositionLong { get; set; }
           
-      ///<summary>      
-      /// Retrieves and Sets the Altitude field
-      /// Units: m</summary>
-      /// <returns>Returns nullable float representing the Altitude field</returns>  
-      /// <param name="altitude_">Nullable field value to be set</param>
-      public float? Altitude { get; set; }
+        ///<summary>      
+        /// Retrieves and Sets the Altitude field
+        /// Units: m</summary>
+        /// <returns>Returns nullable float representing the Altitude field</returns>  
+        /// <param name="altitude_">Nullable field value to be set</param>
+        public float? Altitude { get; set; }
           
-      ///<summary>      
-      /// Retrieves the HeartRate field
-      /// Units: bpm</summary>
-      /// <returns>Returns nullable byte representing the HeartRate field</returns>
-      /// <param name="heartRate_">Nullable field value to be set</param>
-      public byte? HeartRate { get; set; }   
+        ///<summary>      
+        /// Retrieves the HeartRate field
+        /// Units: bpm</summary>
+        /// <returns>Returns nullable byte representing the HeartRate field</returns>
+        /// <param name="heartRate_">Nullable field value to be set</param>
+        public byte? HeartRate { get; set; }   
           
-      ///<summary>      
-      /// Retrieves the Cadence field
-      /// Units: rpm</summary>
-      /// <returns>Returns nullable byte representing the Cadence field</returns>      
-      /// <param name="cadence_">Nullable field value to be set</param>
-      public byte? Cadence { get; set; }
+        ///<summary>      
+        /// Retrieves the Cadence field
+        /// Units: rpm</summary>
+        /// <returns>Returns nullable byte representing the Cadence field</returns>      
+        /// <param name="cadence_">Nullable field value to be set</param>
+        public byte? Cadence { get; set; }
           
-      ///<summary>      
-      /// Retrieves the Distance field
-      /// Units: m</summary>
-      /// <returns>Returns nullable float representing the Distance field</returns>      
-      /// <param name="distance_">Nullable field value to be set</param>
-      public float? Distance { get; set; }
+        ///<summary>      
+        /// Retrieves the Distance field
+        /// Units: m</summary>
+        /// <returns>Returns nullable float representing the Distance field</returns>      
+        /// <param name="distance_">Nullable field value to be set</param>
+        public float? Distance { get; set; }
        
           
-      ///<summary>      
-      /// Retrieves the Speed field
-      /// Units: m/s</summary>
-      /// <returns>Returns nullable float representing the Speed field</returns>
-      /// <param name="speed_">Nullable field value to be set</param>
-      public float? Speed { get; set; }
+        ///<summary>      
+        /// Retrieves the Speed field
+        /// Units: m/s</summary>
+        /// <returns>Returns nullable float representing the Speed field</returns>
+        /// <param name="speed_">Nullable field value to be set</param>
+        public float? Speed { get; set; }
           
-      ///<summary>      
-      /// Retrieves the Power field
-      /// Units: watts</summary>
-      /// <returns>Returns nullable ushort representing the Power field</returns>  
-      /// <param name="power_">Nullable field value to be set</param>
-      public ushort? Power { get; set; }
-
-      ///<summary>      
-      /// Retrieves the CompressedSpeedDistance field</summary>
-      /// <param name="index">0 based index of CompressedSpeedDistance element to retrieve</param>
-      /// <returns>Returns nullable byte representing the CompressedSpeedDistance field</returns> 
-      /// <param name="compressedSpeedDistance_">Nullable field value to be set</param>
-      public byte? CompressedSpeedDistance { get; set; }
+        ///<summary>      
+        /// Retrieves the Power field
+        /// Units: watts</summary>
+        /// <returns>Returns nullable ushort representing the Power field</returns>  
+        /// <param name="power_">Nullable field value to be set</param>
+        public ushort? Power { get; set; }
           
-      ///<summary>      
-      /// Retrieves the Grade field
-      /// Units: %</summary>
-      /// <returns>Returns nullable float representing the Grade field</returns>      
-      /// <param name="grade_">Nullable field value to be set</param>
-      public float? Grade { get; set; }
+        ///<summary>      
+        /// Retrieves the Grade field
+        /// Units: %</summary>
+        /// <returns>Returns nullable float representing the Grade field</returns>      
+        /// <param name="grade_">Nullable field value to be set</param>
+        public float? Grade { get; set; }
           
-      ///<summary>      
-      /// Retrieves the Resistance field
-      /// Comment: Relative. 0 is none  254 is Max.</summary>
-      /// <returns>Returns nullable byte representing the Resistance field</returns>      
-      /// <param name="resistance_">Nullable field value to be set</param>    
-      public byte? Resistance { get; set; }
+        ///<summary>      
+        /// Retrieves the Resistance field
+        /// Comment: Relative. 0 is none  254 is Max.</summary>
+        /// <returns>Returns nullable byte representing the Resistance field</returns>      
+        /// <param name="resistance_">Nullable field value to be set</param>    
+        public byte? Resistance { get; set; }
   
-      ///<summary>      
-      /// Retrieves the TimeFromCourse field
-      /// Units: s</summary>
-      /// <returns>Returns nullable float representing the TimeFromCourse field</returns>  
-      /// <param name="timeFromCourse_">Nullable field value to be set</param>
-      public float? TimeFromCourse { get; set; }
+        ///<summary>      
+        /// Retrieves the TimeFromCourse field
+        /// Units: s</summary>
+        /// <returns>Returns nullable float representing the TimeFromCourse field</returns>  
+        /// <param name="timeFromCourse_">Nullable field value to be set</param>
+        public float? TimeFromCourse { get; set; }
           
-      ///<summary>      
-      /// Retrieves the CycleLength field
-      /// Units: m</summary>
-      /// <returns>Returns nullable float representing the CycleLength field</returns> 
-      /// <param name="cycleLength_">Nullable field value to be set</param>
-      public float? CycleLength { get; set; }
+        ///<summary>      
+        /// Retrieves the CycleLength field
+        /// Units: m</summary>
+        /// <returns>Returns nullable float representing the CycleLength field</returns> 
+        /// <param name="cycleLength_">Nullable field value to be set</param>
+        public float? CycleLength { get; set; }
           
-      ///<summary>      
-      /// Retrieves the Temperature field
-      /// Units: C</summary>
-      /// <returns>Returns nullable sbyte representing the Temperature field</returns>  
-      /// <param name="temperature_">Nullable field value to be set</param>
-      public sbyte? Temperature { get; set; }
+        ///<summary>      
+        /// Retrieves the Temperature field
+        /// Units: C</summary>
+        /// <returns>Returns nullable sbyte representing the Temperature field</returns>  
+        /// <param name="temperature_">Nullable field value to be set</param>
+        public sbyte? Temperature { get; set; }
 
-      ///<summary>      
-      /// Retrieves the Speed1s field
-      /// Units: m/s
-      /// Comment: Speed at 1s intervals.  Timestamp field indicates time of last array element.</summary>
-      /// <param name="index">0 based index of Speed1s element to retrieve</param>
-      /// <returns>Returns nullable float representing the Speed1s field</returns>  
-      /// <param name="speed1s_">Nullable field value to be set</param>
-      public float? Speed1s { get; set; }
-  
+        ///<summary>      
+        /// Retrieves the EnhancedSpeed field
+        /// Units: m/s</summary>
+        /// <returns>Returns nullable float representing the EnhancedSpeed field</returns> 
+        /// <param name="enhancedSpeed_">Nullable field value to be set</param>
+        public float? EnhancedSpeed { get; set; }
+
+        ///<summary>      
+        /// Retrieves the EnhancedAltitude field
+        /// Units: m</summary>
+        /// <returns>Returns nullable float representing the EnhancedAltitude field</returns> 
+        /// <param name="enhancedAltitude_">Nullable field value to be set</param>
+        public float? EnhancedAltitude { get; set; }
+
+        ///<summary>      
+        /// Retrieves the BatterySoc field
+        /// Units: percent
+        /// Comment: lev battery state of charge</summary>
+        /// <returns>Returns nullable float representing the BatterySoc field</returns>  
+        /// <param name="batterySoc_">Nullable field value to be set</param>
+        public float? BatterySoc { get; set; }
+
+        ///<summary>      
+        /// Retrieves the MotorPower field
+        /// Units: watts
+        /// Comment: lev motor power</summary>
+        /// <returns>Returns nullable ushort representing the MotorPower field</returns>
+        /// <param name="motorPower_">Nullable field value to be set</param>  
+        public ushort? MotorPower { get; set; }
+
+      ///// <summary>
+      ///// 
+      ///// </summary>  
+      ///// <returns>returns number of elements in field Speed1s</returns>      
+      //public int GetNumSpeed1s()
+      //{
+      //    return GetNumFieldValues(17, Fit.SubfieldIndexMainField);
+      //}
+
+      /////<summary>      
+      ///// Retrieves the Speed1s field
+      ///// Units: m/s
+      ///// Comment: Speed at 1s intervals.  Timestamp field indicates time of last array element.</summary>
+      ///// <param name="index">0 based index of Speed1s element to retrieve</param>
+      ///// <returns>Returns nullable float representing the Speed1s field</returns>      
+      //public float? GetSpeed1s(int index)
+      //{
+      //    return (float?)GetFieldValue(17, index, Fit.SubfieldIndexMainField);
+      //}
+
+      ///// <summary>        
+      ///// Set Speed1s field
+      ///// Units: m/s
+      ///// Comment: Speed at 1s intervals.  Timestamp field indicates time of last array element.</summary>      
+      ///// <param name="index">0 based index of speed_1s</param>
+      ///// <param name="speed1s_">Nullable field value to be set</param>      
+      //public void SetSpeed1s(int index, float? speed1s_)
+      //{
+      //    SetFieldValue(17, index, speed1s_, Fit.SubfieldIndexMainField);
+      //}
+
       /////<summary>      
       ///// Retrieves the Cycles field
       ///// Units: cycles</summary>
@@ -180,24 +223,14 @@ namespace Underloud.Data.Entities.Fit
       //{  
       //   SetFieldValue(28, 0, compressedAccumulatedPower_, Fit.SubfieldIndexMainField);
       //}
-          
-      /////<summary>      
-      ///// Retrieves the AccumulatedPower field
-      ///// Units: watts</summary>
-      ///// <returns>Returns nullable uint representing the AccumulatedPower field</returns>      
-      //public uint? GetAccumulatedPower()   
-      //{                
-      //   return (uint?)GetFieldValue(29, 0, Fit.SubfieldIndexMainField);                     
-      //}
 
-      ///// <summary>        
-      ///// Set AccumulatedPower field
-      ///// Units: watts</summary>
-      ///// <param name="accumulatedPower_">Nullable field value to be set</param>      
-      //public void SetAccumulatedPower(uint? accumulatedPower_) 
-      //{  
-      //   SetFieldValue(29, 0, accumulatedPower_, Fit.SubfieldIndexMainField);
-      //}
+      ///<summary>      
+      /// Retrieves the AccumulatedPower field
+      /// Units: watts</summary>
+      /// <returns>Returns nullable uint representing the AccumulatedPower field</returns>  
+      /// <param name="accumulatedPower_">Nullable field value to be set</param> 
+      public uint? AccumulatedPower { get; set; }
+
           
       /////<summary>      
       ///// Retrieves the LeftRightBalance field</summary>
@@ -841,36 +874,6 @@ namespace Underloud.Data.Entities.Fit
       //public void SetRightPowerPhasePeak(int index, float? rightPowerPhasePeak_) 
       //{  
       //   SetFieldValue(72, index, rightPowerPhasePeak_, Fit.SubfieldIndexMainField);
-      //}
-          
-      /////<summary>      
-      ///// Retrieves the EnhancedSpeed field
-      ///// Units: m/s</summary>
-      ///// <returns>Returns nullable float representing the EnhancedSpeed field</returns> 
-      ///// <param name="enhancedSpeed_">Nullable field value to be set</param>
-      //public float? EnhancedSpeed { get; set; }
-  
-      /////<summary>      
-      ///// Retrieves the EnhancedAltitude field
-      ///// Units: m</summary>
-      ///// <returns>Returns nullable float representing the EnhancedAltitude field</returns> 
-      ///// <param name="enhancedAltitude_">Nullable field value to be set</param>
-      //public float? EnhancedAltitude { get; set; }
-  
-      /////<summary>      
-      ///// Retrieves the BatterySoc field
-      ///// Units: percent
-      ///// Comment: lev battery state of charge</summary>
-      ///// <returns>Returns nullable float representing the BatterySoc field</returns>  
-      ///// <param name="batterySoc_">Nullable field value to be set</param>
-      //public float? BatterySoc { get; set; }
-          
-      /////<summary>      
-      ///// Retrieves the MotorPower field
-      ///// Units: watts
-      ///// Comment: lev motor power</summary>
-      ///// <returns>Returns nullable ushort representing the MotorPower field</returns>
-      ///// <param name="motorPower_">Nullable field value to be set</param>  
-      //public ushort? MotorPower { get; set; }    
+      //}    
    } 
 } 

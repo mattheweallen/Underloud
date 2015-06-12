@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Underloud.Data.Entities
 {
-    class Unit
+    public class Unit
     {
+        public int UnitId { get; set; }
+        public string SIUnit { get; set; }
+        public string IPUnit { get; set; }
+        public double ConversionFactor { get; set; }
     }
 }
