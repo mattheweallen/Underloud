@@ -51,7 +51,9 @@
     <Compile Include="Entities\Course.cs" />
     <Compile Include="Entities\Field.cs" />
     <Compile Include="Entities\FieldComponent.cs" />
+    <Compile Include="Entities\Fit\Profile\Mesgs\Lap.cs" />
     <Compile Include="Entities\Fit\Profile\Mesgs\Record.cs" />
+    <Compile Include="Entities\Fit\Profile\Mesgs\Session.cs" />
     <Compile Include="Entities\Mesg.cs" />
     <Compile Include="Entities\SportType.cs" />
     <Compile Include="Entities\AthleteInfo.cs" />
