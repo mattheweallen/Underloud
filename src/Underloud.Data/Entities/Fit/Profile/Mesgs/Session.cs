@@ -8,213 +8,146 @@ namespace Underloud.Data.Entities.Fit.Profile.Mesgs
 {
     public class Session
     {
-        #region Methods
-        ///<summary>      
-        /// Retrieves the MessageIndex field
-        /// Comment: Selected bit is set for the current session.</summary>
-        /// <returns>Returns nullable ushort representing the MessageIndex field</returns>   
-        /// <param name="messageIndex_">Nullable field value to be set</param>
-        public ushort? GetMessageIndex()
-        {
-            return (ushort?)GetFieldValue(254, 0, Fit.SubfieldIndexMainField);
-        }
+        //#region Methods
+        /////<summary>      
+        ///// Retrieves the MessageIndex field
+        ///// Comment: Selected bit is set for the current session.</summary>
+        ///// <returns>Returns nullable ushort representing the MessageIndex field</returns>   
+        ///// <param name="messageIndex_">Nullable field value to be set</param>
+        //public ushort? GetMessageIndex()
+        //{
+        //    return (ushort?)GetFieldValue(254, 0, Fit.SubfieldIndexMainField);
+        //}
 
-        /// <summary>        
-        /// Set MessageIndex field
-        /// Comment: Selected bit is set for the current session.</summary>
-        ///       
-        public void SetMessageIndex(ushort? messageIndex_)
-        {
-            SetFieldValue(254, 0, messageIndex_, Fit.SubfieldIndexMainField);
-        }
+        ///// <summary>        
+        ///// Set MessageIndex field
+        ///// Comment: Selected bit is set for the current session.</summary>
+        /////       
+        //public void SetMessageIndex(ushort? messageIndex_)
+        //{
+        //    SetFieldValue(254, 0, messageIndex_, Fit.SubfieldIndexMainField);
+        //}
 
         ///<summary>      
         /// Retrieves the Timestamp field
         /// Units: s
         /// Comment: Sesson end time.</summary>
-        /// <returns>Returns DateTime representing the Timestamp field</returns>      
-        public DateTime GetTimestamp()
-        {
-            return TimestampToDateTime((uint?)GetFieldValue(253, 0, Fit.SubfieldIndexMainField));
-        }
+        /// <returns>Returns DateTime representing the Timestamp field</returns> 
+        /// <param name="timestamp_">Nullable field value to be set</param> 
+        public DateTime Timestamp { get; set; }
 
-        /// <summary>        
-        /// Set Timestamp field
-        /// Units: s
-        /// Comment: Sesson end time.</summary>
-        /// <param name="timestamp_">Nullable field value to be set</param>      
-        public void SetTimestamp(DateTime timestamp_)
-        {
-            SetFieldValue(253, 0, timestamp_.GetTimeStamp(), Fit.SubfieldIndexMainField);
-        }
+        /////<summary>      
+        ///// Retrieves the Event field
+        ///// Comment: session</summary>
+        ///// <returns>Returns nullable Event enum representing the Event field</returns>      
+        //public Event? GetEvent()
+        //{
+        //    object obj = GetFieldValue(0, 0, Fit.SubfieldIndexMainField);
+        //    Event? value = obj == null ? (Event?)null : (Event)obj;
+        //    return value;
+        //}
 
-        ///<summary>      
-        /// Retrieves the Event field
-        /// Comment: session</summary>
-        /// <returns>Returns nullable Event enum representing the Event field</returns>      
-        public Event? GetEvent()
-        {
-            object obj = GetFieldValue(0, 0, Fit.SubfieldIndexMainField);
-            Event? value = obj == null ? (Event?)null : (Event)obj;
-            return value;
-        }
+        ///// <summary>        
+        ///// Set Event field
+        ///// Comment: session</summary>
+        ///// <param name="event_">Nullable field value to be set</param>      
+        //public void SetEvent(Event? event_)
+        //{
+        //    SetFieldValue(0, 0, event_, Fit.SubfieldIndexMainField);
+        //}
 
-        /// <summary>        
-        /// Set Event field
-        /// Comment: session</summary>
-        /// <param name="event_">Nullable field value to be set</param>      
-        public void SetEvent(Event? event_)
-        {
-            SetFieldValue(0, 0, event_, Fit.SubfieldIndexMainField);
-        }
+        /////<summary>      
+        ///// Retrieves the EventType field
+        ///// Comment: stop</summary>
+        ///// <returns>Returns nullable EventType enum representing the EventType field</returns>      
+        //public EventType? GetEventType()
+        //{
+        //    object obj = GetFieldValue(1, 0, Fit.SubfieldIndexMainField);
+        //    EventType? value = obj == null ? (EventType?)null : (EventType)obj;
+        //    return value;
+        //}
 
-        ///<summary>      
-        /// Retrieves the EventType field
-        /// Comment: stop</summary>
-        /// <returns>Returns nullable EventType enum representing the EventType field</returns>      
-        public EventType? GetEventType()
-        {
-            object obj = GetFieldValue(1, 0, Fit.SubfieldIndexMainField);
-            EventType? value = obj == null ? (EventType?)null : (EventType)obj;
-            return value;
-        }
-
-        /// <summary>        
-        /// Set EventType field
-        /// Comment: stop</summary>
-        /// <param name="eventType_">Nullable field value to be set</param>      
-        public void SetEventType(EventType? eventType_)
-        {
-            SetFieldValue(1, 0, eventType_, Fit.SubfieldIndexMainField);
-        }
+        ///// <summary>        
+        ///// Set EventType field
+        ///// Comment: stop</summary>
+        ///// <param name="eventType_">Nullable field value to be set</param>      
+        //public void SetEventType(EventType? eventType_)
+        //{
+        //    SetFieldValue(1, 0, eventType_, Fit.SubfieldIndexMainField);
+        //}
 
         ///<summary>      
         /// Retrieves the StartTime field</summary>
-        /// <returns>Returns DateTime representing the StartTime field</returns>      
-        public DateTime GetStartTime()
-        {
-            return TimestampToDateTime((uint?)GetFieldValue(2, 0, Fit.SubfieldIndexMainField));
-        }
+        /// <returns>Returns DateTime representing the StartTime field</returns> 
+        /// <param name="startTime_">Nullable field value to be set</param>
+        public DateTime StartTime { get; set; }
 
-        /// <summary>        
-        /// Set StartTime field</summary>
-        /// <param name="startTime_">Nullable field value to be set</param>      
-        public void SetStartTime(DateTime startTime_)
-        {
-            SetFieldValue(2, 0, startTime_.GetTimeStamp(), Fit.SubfieldIndexMainField);
-        }
 
         ///<summary>      
         /// Retrieves the StartPositionLat field
         /// Units: semicircles</summary>
         /// <returns>Returns nullable int representing the StartPositionLat field</returns>      
-        public int? GetStartPositionLat()
-        {
-            return (int?)GetFieldValue(3, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set StartPositionLat field
-        /// Units: semicircles</summary>
-        /// <param name="startPositionLat_">Nullable field value to be set</param>      
-        public void SetStartPositionLat(int? startPositionLat_)
-        {
-            SetFieldValue(3, 0, startPositionLat_, Fit.SubfieldIndexMainField);
-        }
+        /// <param name="startPositionLat_">Nullable field value to be set</param>   
+        public int? StartPositionLat { get; set; }
 
         ///<summary>      
         /// Retrieves the StartPositionLong field
         /// Units: semicircles</summary>
-        /// <returns>Returns nullable int representing the StartPositionLong field</returns>      
-        public int? GetStartPositionLong()
-        {
-            return (int?)GetFieldValue(4, 0, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable int representing the StartPositionLong field</returns>  
+        /// <param name="startPositionLong_">Nullable field value to be set</param>
+        public int? StartPositionLong { get; set; }
 
-        /// <summary>        
-        /// Set StartPositionLong field
-        /// Units: semicircles</summary>
-        /// <param name="startPositionLong_">Nullable field value to be set</param>      
-        public void SetStartPositionLong(int? startPositionLong_)
-        {
-            SetFieldValue(4, 0, startPositionLong_, Fit.SubfieldIndexMainField);
-        }
+        /////<summary>      
+        ///// Retrieves the Sport field</summary>
+        ///// <returns>Returns nullable Sport enum representing the Sport field</returns>      
+        //public Sport? GetSport()
+        //{
+        //    object obj = GetFieldValue(5, 0, Fit.SubfieldIndexMainField);
+        //    Sport? value = obj == null ? (Sport?)null : (Sport)obj;
+        //    return value;
+        //}
 
-        ///<summary>      
-        /// Retrieves the Sport field</summary>
-        /// <returns>Returns nullable Sport enum representing the Sport field</returns>      
-        public Sport? GetSport()
-        {
-            object obj = GetFieldValue(5, 0, Fit.SubfieldIndexMainField);
-            Sport? value = obj == null ? (Sport?)null : (Sport)obj;
-            return value;
-        }
+        ///// <summary>        
+        ///// Set Sport field</summary>
+        ///// <param name="sport_">Nullable field value to be set</param>      
+        //public void SetSport(Sport? sport_)
+        //{
+        //    SetFieldValue(5, 0, sport_, Fit.SubfieldIndexMainField);
+        //}
 
-        /// <summary>        
-        /// Set Sport field</summary>
-        /// <param name="sport_">Nullable field value to be set</param>      
-        public void SetSport(Sport? sport_)
-        {
-            SetFieldValue(5, 0, sport_, Fit.SubfieldIndexMainField);
-        }
+        /////<summary>      
+        ///// Retrieves the SubSport field</summary>
+        ///// <returns>Returns nullable SubSport enum representing the SubSport field</returns>      
+        //public SubSport? GetSubSport()
+        //{
+        //    object obj = GetFieldValue(6, 0, Fit.SubfieldIndexMainField);
+        //    SubSport? value = obj == null ? (SubSport?)null : (SubSport)obj;
+        //    return value;
+        //}
 
-        ///<summary>      
-        /// Retrieves the SubSport field</summary>
-        /// <returns>Returns nullable SubSport enum representing the SubSport field</returns>      
-        public SubSport? GetSubSport()
-        {
-            object obj = GetFieldValue(6, 0, Fit.SubfieldIndexMainField);
-            SubSport? value = obj == null ? (SubSport?)null : (SubSport)obj;
-            return value;
-        }
-
-        /// <summary>        
-        /// Set SubSport field</summary>
-        /// <param name="subSport_">Nullable field value to be set</param>      
-        public void SetSubSport(SubSport? subSport_)
-        {
-            SetFieldValue(6, 0, subSport_, Fit.SubfieldIndexMainField);
-        }
+        ///// <summary>        
+        ///// Set SubSport field</summary>
+        ///// <param name="subSport_">Nullable field value to be set</param>      
+        //public void SetSubSport(SubSport? subSport_)
+        //{
+        //    SetFieldValue(6, 0, subSport_, Fit.SubfieldIndexMainField);
+        //}
 
         ///<summary>      
         /// Retrieves the TotalElapsedTime field
         /// Units: s
         /// Comment: Time (includes pauses)</summary>
-        /// <returns>Returns nullable float representing the TotalElapsedTime field</returns>      
-        public float? GetTotalElapsedTime()
-        {
-            return (float?)GetFieldValue(7, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set TotalElapsedTime field
-        /// Units: s
-        /// Comment: Time (includes pauses)</summary>
-        /// <param name="totalElapsedTime_">Nullable field value to be set</param>      
-        public void SetTotalElapsedTime(float? totalElapsedTime_)
-        {
-            SetFieldValue(7, 0, totalElapsedTime_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable float representing the TotalElapsedTime field</returns> 
+        /// <param name="totalElapsedTime_">Nullable field value to be set</param>
+        public float? TotalElapsedTime { get; set; }
 
         ///<summary>      
         /// Retrieves the TotalTimerTime field
         /// Units: s
         /// Comment: Timer Time (excludes pauses)</summary>
-        /// <returns>Returns nullable float representing the TotalTimerTime field</returns>      
-        public float? GetTotalTimerTime()
-        {
-            return (float?)GetFieldValue(8, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set TotalTimerTime field
-        /// Units: s
-        /// Comment: Timer Time (excludes pauses)</summary>
-        /// <param name="totalTimerTime_">Nullable field value to be set</param>      
-        public void SetTotalTimerTime(float? totalTimerTime_)
-        {
-            SetFieldValue(8, 0, totalTimerTime_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable float representing the TotalTimerTime field</returns>    
+        /// <param name="totalTimerTime_">Nullable field value to be set</param>
+        public float? TotalTimerTime { get; set; }
 
         ///<summary>      
         /// Retrieves the TotalDistance field
