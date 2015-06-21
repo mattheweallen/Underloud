@@ -152,190 +152,75 @@ namespace Underloud.Data.Entities.Fit.Profile.Mesgs
         ///<summary>      
         /// Retrieves the TotalDistance field
         /// Units: m</summary>
-        /// <returns>Returns nullable float representing the TotalDistance field</returns>      
-        public float? GetTotalDistance()
-        {
-            return (float?)GetFieldValue(9, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set TotalDistance field
-        /// Units: m</summary>
-        /// <param name="totalDistance_">Nullable field value to be set</param>      
-        public void SetTotalDistance(float? totalDistance_)
-        {
-            SetFieldValue(9, 0, totalDistance_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable float representing the TotalDistance field</returns>
+        /// <param name="totalDistance_">Nullable field value to be set</param>
+        public float? TotalDistance { get; set; }
 
         ///<summary>      
         /// Retrieves the TotalCycles field
         /// Units: cycles</summary>
-        /// <returns>Returns nullable uint representing the TotalCycles field</returns>      
-        public uint? GetTotalCycles()
-        {
-            return (uint?)GetFieldValue(10, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set TotalCycles field
-        /// Units: cycles</summary>
-        /// <param name="totalCycles_">Nullable field value to be set</param>      
-        public void SetTotalCycles(uint? totalCycles_)
-        {
-            SetFieldValue(10, 0, totalCycles_, Fit.SubfieldIndexMainField);
-        }
-
+        /// <returns>Returns nullable uint representing the TotalCycles field</returns>
+        /// <param name="totalCycles_">Nullable field value to be set</param>
+        public uint? TotalCycles { get; set; }
 
         /// <summary>       
         /// Retrieves the TotalStrides subfield
         /// Units: strides</summary>      
-        /// <returns>Nullable uint representing the TotalStrides subfield</returns>      
-        public uint? GetTotalStrides()
-        {
-            return (uint?)GetFieldValue(10, 0, TotalCyclesSubfield.TotalStrides);
-        }
+        /// <returns>Nullable uint representing the TotalStrides subfield</returns>
+        /// <param name="totalStrides">Subfield value to be set</param>
+        public uint? TotalStrides { get; set; }
 
-        /// <summary> 
-        /// 
-        /// Set TotalStrides subfield
-        /// Units: strides</summary>
-        /// <param name="totalStrides">Subfield value to be set</param>      
-        public void SetTotalStrides(uint? totalStrides)
-        {
-            SetFieldValue(10, 0, totalStrides, TotalCyclesSubfield.TotalStrides);
-        }
         ///<summary>      
         /// Retrieves the TotalCalories field
         /// Units: kcal</summary>
-        /// <returns>Returns nullable ushort representing the TotalCalories field</returns>      
-        public ushort? GetTotalCalories()
-        {
-            return (ushort?)GetFieldValue(11, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set TotalCalories field
-        /// Units: kcal</summary>
-        /// <param name="totalCalories_">Nullable field value to be set</param>      
-        public void SetTotalCalories(ushort? totalCalories_)
-        {
-            SetFieldValue(11, 0, totalCalories_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable ushort representing the TotalCalories field</returns>
+        /// <param name="totalCalories_">Nullable field value to be set</param>
+        public ushort? TotalCalories { get; set; }
 
         ///<summary>      
         /// Retrieves the TotalFatCalories field
         /// Units: kcal</summary>
-        /// <returns>Returns nullable ushort representing the TotalFatCalories field</returns>      
-        public ushort? GetTotalFatCalories()
-        {
-            return (ushort?)GetFieldValue(13, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set TotalFatCalories field
-        /// Units: kcal</summary>
-        /// <param name="totalFatCalories_">Nullable field value to be set</param>      
-        public void SetTotalFatCalories(ushort? totalFatCalories_)
-        {
-            SetFieldValue(13, 0, totalFatCalories_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable ushort representing the TotalFatCalories field</returns>
+        /// <param name="totalFatCalories_">Nullable field value to be set</param>
+        public ushort? TotalFatCalories { get; set; }
 
         ///<summary>      
         /// Retrieves the AvgSpeed field
         /// Units: m/s
         /// Comment: total_distance / total_timer_time</summary>
-        /// <returns>Returns nullable float representing the AvgSpeed field</returns>      
-        public float? GetAvgSpeed()
-        {
-            return (float?)GetFieldValue(14, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set AvgSpeed field
-        /// Units: m/s
-        /// Comment: total_distance / total_timer_time</summary>
-        /// <param name="avgSpeed_">Nullable field value to be set</param>      
-        public void SetAvgSpeed(float? avgSpeed_)
-        {
-            SetFieldValue(14, 0, avgSpeed_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable float representing the AvgSpeed field</returns>
+        /// <param name="avgSpeed_">Nullable field value to be set</param>
+        public float? AvgSpeed { get; set; }
 
         ///<summary>      
         /// Retrieves the MaxSpeed field
         /// Units: m/s</summary>
-        /// <returns>Returns nullable float representing the MaxSpeed field</returns>      
-        public float? GetMaxSpeed()
-        {
-            return (float?)GetFieldValue(15, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set MaxSpeed field
-        /// Units: m/s</summary>
-        /// <param name="maxSpeed_">Nullable field value to be set</param>      
-        public void SetMaxSpeed(float? maxSpeed_)
-        {
-            SetFieldValue(15, 0, maxSpeed_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable float representing the MaxSpeed field</returns>
+        /// <param name="maxSpeed_">Nullable field value to be set</param>
+        public float? MaxSpeed { get; set; }
 
         ///<summary>      
         /// Retrieves the AvgHeartRate field
         /// Units: bpm
         /// Comment: average heart rate (excludes pause time)</summary>
-        /// <returns>Returns nullable byte representing the AvgHeartRate field</returns>      
-        public byte? GetAvgHeartRate()
-        {
-            return (byte?)GetFieldValue(16, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set AvgHeartRate field
-        /// Units: bpm
-        /// Comment: average heart rate (excludes pause time)</summary>
-        /// <param name="avgHeartRate_">Nullable field value to be set</param>      
-        public void SetAvgHeartRate(byte? avgHeartRate_)
-        {
-            SetFieldValue(16, 0, avgHeartRate_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable byte representing the AvgHeartRate field</returns>
+        /// <param name="avgHeartRate_">Nullable field value to be set</param>
+        public byte? AvgHeartRate { get; set; }
 
         ///<summary>      
         /// Retrieves the MaxHeartRate field
         /// Units: bpm</summary>
-        /// <returns>Returns nullable byte representing the MaxHeartRate field</returns>      
-        public byte? GetMaxHeartRate()
-        {
-            return (byte?)GetFieldValue(17, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set MaxHeartRate field
-        /// Units: bpm</summary>
-        /// <param name="maxHeartRate_">Nullable field value to be set</param>      
-        public void SetMaxHeartRate(byte? maxHeartRate_)
-        {
-            SetFieldValue(17, 0, maxHeartRate_, Fit.SubfieldIndexMainField);
-        }
+        /// <returns>Returns nullable byte representing the MaxHeartRate field</returns>
+        /// <param name="maxHeartRate_">Nullable field value to be set</param>
+        public byte? MaxHeartRate { get; set; }
 
         ///<summary>      
         /// Retrieves the AvgCadence field
         /// Units: rpm
         /// Comment: total_cycles / total_timer_time if non_zero_avg_cadence otherwise total_cycles / total_elapsed_time</summary>
-        /// <returns>Returns nullable byte representing the AvgCadence field</returns>      
-        public byte? GetAvgCadence()
-        {
-            return (byte?)GetFieldValue(18, 0, Fit.SubfieldIndexMainField);
-        }
-
-        /// <summary>        
-        /// Set AvgCadence field
-        /// Units: rpm
-        /// Comment: total_cycles / total_timer_time if non_zero_avg_cadence otherwise total_cycles / total_elapsed_time</summary>
-        /// <param name="avgCadence_">Nullable field value to be set</param>      
-        public void SetAvgCadence(byte? avgCadence_)
-        {
-            SetFieldValue(18, 0, avgCadence_, Fit.SubfieldIndexMainField);
-        }
-
+        /// <returns>Returns nullable byte representing the AvgCadence field</returns>
+        /// <param name="avgCadence_">Nullable field value to be set</param>
+        public byte? AvgCadence { get; set; }
 
         /// <summary>       
         /// Retrieves the AvgRunningCadence subfield
